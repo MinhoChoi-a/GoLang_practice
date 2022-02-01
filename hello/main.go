@@ -1,3 +1,4 @@
+//Go programs start running in the main package. It is a special package that is used with programs that are meant to be executable
 package main
 
 import (
@@ -6,6 +7,7 @@ import (
 
 const constInt int = 1000
 
+//The main() function is a special function that is the entry point of an executable program.
 func main() {
 
 	var aString string = "This is Go"
