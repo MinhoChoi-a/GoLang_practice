@@ -23,7 +23,7 @@ func main() {
 
 	circleRadius := 15.5
 	circumference := circleRadius * 2 * math.Pi
-	fmt.Printf("%.2f", circumference)
+	fmt.Printf("%.2f\n", circumference)
 
 	n := time.Now()
 	fmt.Println("Studied at", n)

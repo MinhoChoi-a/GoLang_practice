@@ -16,7 +16,7 @@ func main() {
 
 	//underscore: to ignore variable
 	input, _ := reader.ReadString('\n')
-	fmt.Println("Your input: ", input)
+	fmt.Println("Your input: ", input)	
 
 	fmt.Print("Enter a number: ")
 	numInput, _ := reader.ReadString('\n')
@@ -24,6 +24,8 @@ func main() {
 
 	if err != nil {
 		fmt.Println(err)
+		panic("value must be a number")
+		//custom message and exit app
 	} else {
 		fmt.Println("value of number: ", aFloat)
 	}
