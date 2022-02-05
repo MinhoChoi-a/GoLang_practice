@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	poodle := Dog{"Poodle", 10}
+	poodle := Dog{"Poodle", 10, "auf"}
 	fmt.Println(poodle)
 
 	//for debuggin process
@@ -26,4 +26,12 @@ func main() {
 type Dog struct {
 	Breed  string
 	Weight int
+	Sound  string
+}
+
+//pass receiver(class)
+//this is a brand new copy of the object.
+//if you want to use it as Refernce, need to pass a pointer
+func (d Dog) Speak() {
+	fmt.Println(d.Sound)
 }
